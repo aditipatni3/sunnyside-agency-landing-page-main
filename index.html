@@ -71,7 +71,7 @@
         text-decoration: none;
         color: white;
       }
-      .nav a:hover{
+      .nav a:hover {
         border: 0.5px solid white;
         border-radius: 50px;
         padding: 0.5rem 1rem;
@@ -86,7 +86,7 @@
         font-size: 12px;
         padding: 0 1rem;
       }
-      button:hover{
+      button:hover {
         cursor: pointer;
         width: 6.4rem;
         height: 2.4rem;
@@ -129,53 +129,52 @@
       }
       .box a h6 {
         margin-top: 2rem;
-        display: inline;
+        display: inline-block;
         font-family: Fraunces;
         font-size: 1rem;
         color: black;
         text-decoration: none;
         text-transform: uppercase;
       }
-      .box1 a h6:hover{
+      .box1 a h6:hover {
         border-bottom: 8px solid yellow;
       }
-      .box4 a h6:hover{
+      .box4 a h6:hover {
         border-bottom: 8px solid pink;
       }
-      .bg-box{
+      .bg-box {
         display: flex;
         flex-direction: column;
         justify-content: end;
       }
-      .bg-box h2{
+      .bg-box h2 {
         align-items: center;
         margin: 1rem auto;
         font-family: Fraunces;
       }
-      .bg-box p{
+      .bg-box p {
         margin: 0 auto 3rem auto;
         align-items: center;
         text-align: center;
         padding: 1rem 15rem;
         line-height: 150%;
       }
-      .box5{
+      .box5 {
         color: hsl(167, 40%, 24%);
       }
-      .box6{
+      .box6 {
         color: hsl(198, 62%, 26%);
       }
       .testimonial {
         margin: 12rem 5rem;
       }
-      .testimonial h2{
+      .testimonial h2 {
         margin: 1rem;
         text-align: center;
         font-family: Fraunces;
         color: hsl(200, 4%, 72%);
-       
-        text-transform: uppercase;
 
+        text-transform: uppercase;
       }
       .clients {
         display: flex;
@@ -197,7 +196,7 @@
         text-align: center;
         padding: 1rem 5rem;
       }
-      .designation{
+      .designation {
         color: hsl(210, 6%, 81%);
         font-size: 0.7rem;
         opacity: 0.7;
@@ -208,46 +207,162 @@
         font-size: 1rem;
         margin-top: 3rem;
       }
-      .footer{
-        background-color:  hsl(168, 47%, 58%);
+      .footer {
+        background-color: hsl(168, 47%, 58%);
         height: 15rem;
         display: flex;
         flex-direction: column;
       }
-      .footer img{
+      .footer img {
         margin: 2rem auto;
-
       }
-      .bottomNav{
+      .bottomNav {
         margin: 0 auto 0 auto;
       }
-      .bottomNav a{
+      .bottomNav a {
         margin: 0 1rem;
         text-decoration: none;
         color: hsl(168, 34%, 41%);
       }
-      .icons{
+      .icons {
         margin: 0 auto;
       }
-      .icons a{
+      .icons a {
         margin: 0 1rem;
       }
-      /*@media screen and (max-width:390px){
-        body{
-          background-color:black;
+      @media screen and (max-width: 390px) {
+        body {
         }
-        .header{
-          background-size: 100%;
-          height: 100vh;
-        }
-        .navbar{
-          margin: 1rem 1rem;
-        }
-        .nav{
-          display: none;
+        .header {
+          background-image: url(./images/mobile/image-header.jpg);
+          background-size: contain;
+          background-repeat: no-repeat;
+         
+          padding: 1rem 1rem;
+          height: 66vh;
           
         }
-      }*/
+        .header h1 {
+          font-size: 3rem;
+          text-transform: uppercase;
+          margin: 3rem auto 0 auto;
+          padding: 1rem 1rem;
+          color: white;
+          font-family: Fraunces;
+          text-align: center;
+          
+        }
+        
+        .navbar {
+          margin: 1rem 1rem;
+        }
+        .nav {
+          display: none;
+        }
+        .content {
+          display: flex;
+          flex-direction: column;
+        }
+        .box {
+          padding: 3rem 3rem;
+        }
+        .box h2 {
+          font-family: Fraunces;
+          font-weight: 700;
+          font-size: 2rem;
+          text-align: center;
+         
+        }
+        .box p {
+          color: hsl(213, 9%, 39%);
+          text-align: center;
+          padding-right: 1rem;
+          line-height: 150%;
+        }
+        .learn-more{
+          margin-top: 2rem;
+          
+          font-family: Fraunces;
+          font-size: 1rem;
+          color: black;
+          text-decoration: none;
+          text-transform: uppercase;
+          text-align: center;
+          margin: 1rem auto;
+
+        }
+        .box5 {
+          background-image: url(./images/mobile/image-graphic-design.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+        }
+        .box6 {
+          background-repeat: no-repeat;
+          background-image: url(./images/mobile/image-photography.jpg);
+          background-size: cover;
+        }
+        .bg-box h2 {
+          text-align: center;
+          margin: 22rem 0 0 0;
+          font-family: Fraunces;
+        }
+        .bg-box p {
+          margin: 1rem auto 5rem auto;
+
+          text-align: center;
+          padding: 1rem 2rem;
+          line-height: 110%;
+        }
+        .box1 {
+          order: -1;
+        }
+        .box2{
+          order:-2
+        }
+        .testimonial {
+          margin: 2rem 1rem;
+        }
+        .clients {
+          display: flex;
+          flex-direction: column;
+        }
+        .item img {
+          border-radius: 50%;
+          width: 3rem;
+          margin: 2rem 42%;
+        }
+        .item p {
+          color: hsl(213, 9%, 39%);
+          text-align: center;
+          padding: 1rem 0;
+        }
+        .designation {
+          color: hsl(210, 6%, 81%);
+          font-size: 0.7rem;
+          opacity: 0.7;
+        }
+        .item h6 {
+          text-align: center;
+          font-family: Fraunces;
+          font-size: 1rem;
+          margin-top: 1rem;
+        }
+        .border {
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
+        }
+        .border img {
+          width: 100%;
+        }
+        .footer {
+          height: 17rem;
+        }
+        .footer img {
+          margin: 3rem auto;
+        }
+      }
     </style>
   </head>
   <body>
@@ -271,7 +386,7 @@
           grow fast. Engage your clients through compelling visuals that do most
           of the marketing for you.
         </p>
-        <a href="#"><h6>Learn more</h6> </a>
+        <a href="#"><h6 class="learn-more">Learn more</h6> </a>
       </div>
       <div class="box2">
         <img src="./images/desktop/image-transform.jpg" alt="" />
@@ -286,7 +401,7 @@
           photographers, videographers, and copywriters, we’ll build and extend
           your brand in digital places.
         </p>
-        <a href="#"> <h6>Learn more</h6> </a>
+        <a href="#"> <h6 class="learn-more">Learn more</h6> </a>
       </div>
       <div class="box5 bg-box">
         <h2>Graphic design</h2>
@@ -344,30 +459,38 @@
       <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="" />
     </div>
 
-
     <div class="footer">
-      <img src="./images/logo.svg" alt="">
+      <img src="./images/logo.svg" alt="" />
       <div class="bottomNav">
-      <a href="">About</a>
-      <a href="">Services</a>
-      <a href="">Projects</a>
-      <a href="">Contact</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Projects</a>
+        <a href="">Contact</a>
+      </div>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/aditi-patni-59438721b/"
+          ><img src="./images/icon-facebook.svg" alt=""
+        /></a>
+        <a href="https://www.linkedin.com/in/aditi-patni-59438721b/"
+          ><img src="./images/icon-instagram.svg" alt=""
+        /></a>
+        <a href="https://www.linkedin.com/in/aditi-patni-59438721b/"
+          ><img src="./images/icon-twitter.svg" alt=""
+        /></a>
+        <a href="https://www.linkedin.com/in/aditi-patni-59438721b/"
+          ><img src="./images/icon-pinterest.svg" alt=""
+        /></a>
+      </div>
     </div>
-    <div class="icons">
-      <a href="https://www.linkedin.com/in/aditi-patni-59438721b/"><img src="./images/icon-facebook.svg" alt=""></a>
-      <a href="https://www.linkedin.com/in/aditi-patni-59438721b/"><img src="./images/icon-instagram.svg" alt=""></a>
-      <a href="https://www.linkedin.com/in/aditi-patni-59438721b/"><img src="./images/icon-twitter.svg" alt=""></a>
-      <a href="https://www.linkedin.com/in/aditi-patni-59438721b/"><img src="./images/icon-pinterest.svg" alt=""></a>
-    </div>
-    </div>
-
-       
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="https://www.linkedin.com/in/aditi-patni-59438721b/">Aditi Patni</a>.
+      >. Coded by
+      <a href="https://www.linkedin.com/in/aditi-patni-59438721b/"
+        >Aditi Patni</a
+      >.
     </div>
   </body>
 </html>
