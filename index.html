@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Barlow;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        background-color: black;
+        color: white;
+      }
+      .attribution a {
+        color: hsl(228, 44%, 68%);
+        text-decoration: none;
+      }
+      .header {
+        background-image: url(./images/desktop/image-header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        padding: 1rem 1rem;
+      }
+      .header h1 {
+        font-size: 5rem;
+        text-transform: uppercase;
+        margin: 10rem auto;
+        color: white;
+        font-family: Fraunces;
+        text-align: center;
+      }
+
+      .navbar {
+        margin: 1rem 3rem;
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        gap: 10%;
+      }
+      .logo {
+        grid-column: 1;
+      }
+      .nav {
+        grid-column: 2;
+        display: flex;
+        justify-content: space-around;
+      }
+      .nav a {
+        text-decoration: none;
+        color: white;
+      }
+      .nav a:hover{
+        border: 0.5px solid white;
+        border-radius: 50px;
+        padding: 0.5rem 1rem;
+      }
+      button {
+        font-family: Fraunces;
+        width: 6.2rem;
+        height: 2.3rem;
+        border-radius: 25px;
+        border: 1px solid white;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 0 1rem;
+      }
+      button:hover{
+        cursor: pointer;
+        width: 6.4rem;
+        height: 2.4rem;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+      .box2 img {
+        width: 100%;
+      }
+      .box3 img {
+        width: 100%;
+      }
+      .box5 {
+        background-image: url(./images/desktop/image-graphic-design.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .box6 {
+        background-repeat: no-repeat;
+        background-image: url(./images/desktop/image-photography.jpg);
+        background-size: contain;
+      }
+      .box {
+        padding: 10rem 12rem;
+      }
+      .box h2 {
+        font-family: Fraunces;
+        font-weight: 700;
+        font-size: 2rem;
+        margin: 2rem 0;
+      }
+      .box p {
+        color: hsl(213, 9%, 39%);
+        text-align: justify;
+        padding-right: 5rem;
+        line-height: 150%;
+      }
+      .box a h6 {
+        margin-top: 2rem;
+        display: inline;
+        font-family: Fraunces;
+        font-size: 1rem;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .box1 a h6:hover{
+        border-bottom: 8px solid yellow;
+      }
+      .box4 a h6:hover{
+        border-bottom: 8px solid pink;
+      }
+      .bg-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+      }
+      .bg-box h2{
+        align-items: center;
+        margin: 1rem auto;
+        font-family: Fraunces;
+      }
+      .bg-box p{
+        margin: 0 auto 3rem auto;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 15rem;
+        line-height: 150%;
+      }
+      .box5{
+        color: hsl(167, 40%, 24%);
+      }
+      .box6{
+        color: hsl(198, 62%, 26%);
+      }
+      .testimonial {
+        margin: 12rem 5rem;
+      }
+      .testimonial h2{
+        margin: 1rem;
+        text-align: center;
+        font-family: Fraunces;
+        color: hsl(200, 4%, 72%);
+       
+        text-transform: uppercase;
+
+      }
+      .clients {
+        display: flex;
+      }
+      .border {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .border img {
+        width: 100%;
+      }
+      .item img {
+        border-radius: 50%;
+        width: 3rem;
+        margin: 2rem 46%;
+      }
+      .item p {
+        color: hsl(213, 9%, 39%);
+        text-align: center;
+        padding: 1rem 5rem;
+      }
+      .designation{
+        color: hsl(210, 6%, 81%);
+        font-size: 0.7rem;
+        opacity: 0.7;
+      }
+      .item h6 {
+        text-align: center;
+        font-family: Fraunces;
+        font-size: 1rem;
+        margin-top: 3rem;
+      }
+      .footer{
+        background-color:  hsl(168, 47%, 58%);
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+      }
+      .footer img{
+        margin: 2rem auto;
+
+      }
+      .bottomNav{
+        margin: 0 auto 0 auto;
+      }
+      .bottomNav a{
+        margin: 0 1rem;
+        text-decoration: none;
+        color: hsl(168, 34%, 41%);
+      }
+      .icons{
+        margin: 0 auto;
+      }
+      .icons a{
+        margin: 0 1rem;
+      }
+      /*@media screen and (max-width:390px){
+        body{
+          background-color:black;
+        }
+        .header{
+          background-size: 100%;
+          height: 100vh;
+        }
+        .navbar{
+          margin: 1rem 1rem;
+        }
+        .nav{
+          display: none;
+          
+        }
+      }*/
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar">
+        <div class="logo"><img src="./images/logo.svg" alt="logo" /></div>
+        <div class="nav">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+          <button>Contact</button>
+        </div>
+      </div>
+      <h1>We are creatives</h1>
+    </div>
+    <div class="content">
+      <div class="box1 box">
+        <h2>Transform your brand</h2>
+        <p>
+          We are a full-service creative agency specializing in helping brands
+          grow fast. Engage your clients through compelling visuals that do most
+          of the marketing for you.
+        </p>
+        <a href="#"><h6>Learn more</h6> </a>
+      </div>
+      <div class="box2">
+        <img src="./images/desktop/image-transform.jpg" alt="" />
+      </div>
+      <div class="box3">
+        <img src="./images/desktop/image-stand-out.jpg" alt="" />
+      </div>
+      <div class="box4 box">
+        <h2>Stand out to the right audience</h2>
+        <p>
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we’ll build and extend
+          your brand in digital places.
+        </p>
+        <a href="#"> <h6>Learn more</h6> </a>
+      </div>
+      <div class="box5 bg-box">
+        <h2>Graphic design</h2>
+        <p>
+          Great design makes you memorable. We deliver artwork that underscores
+          your brand message and captures potential clients’ attention.
+        </p>
+      </div>
+      <div class="box6 bg-box">
+        <h2>Photography</h2>
+        <p>
+          Increase your credibility by getting the most stunning, high-quality
+          photos that improve your business image.
+        </p>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <h2>Client testimonials</h2>
+      <div class="clients">
+        <div class="item">
+          <img src="./images/image-emily.jpg" alt="" />
+          <p>
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <h6>Emily R.</h6>
+          <p class="designation">Marketing Director</p>
+        </div>
+        <div class="item">
+          <img src="./images/image-thomas.jpg" alt="" />
+          <p>
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <h6>Thomas S.</h6>
+          <p class="designation">Chief Operating Officer</p>
+        </div>
+        <div class="item">
+          <img src="./images/image-jennie.jpg" alt="" />
+          <p>
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <h6>Jennie F.</h6>
+          <p class="designation">Business Owner</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="border">
+      <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" />
+      <img src="./images/desktop/image-gallery-orange.jpg" alt="" />
+      <img src="./images/desktop/image-gallery-cone.jpg" alt="" />
+      <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="" />
+    </div>
+
+
+    <div class="footer">
+      <img src="./images/logo.svg" alt="">
+      <div class="bottomNav">
+      <a href="">About</a>
+      <a href="">Services</a>
+      <a href="">Projects</a>
+      <a href="">Contact</a>
+    </div>
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/aditi-patni-59438721b/"><img src="./images/icon-facebook.svg" alt=""></a>
+      <a href="https://www.linkedin.com/in/aditi-patni-59438721b/"><img src="./images/icon-instagram.svg" alt=""></a>
+      <a href="https://www.linkedin.com/in/aditi-patni-59438721b/"><img src="./images/icon-twitter.svg" alt=""></a>
+      <a href="https://www.linkedin.com/in/aditi-patni-59438721b/"><img src="./images/icon-pinterest.svg" alt=""></a>
+    </div>
+    </div>
+
+       
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.linkedin.com/in/aditi-patni-59438721b/">Aditi Patni</a>.
+    </div>
+  </body>
+</html>
